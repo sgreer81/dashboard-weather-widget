@@ -27,7 +27,7 @@ class WeatherWidget extends Component {
 
     /**
      * Transform string to Title Case
-     * 
+     *
      * @param {string} string
      */
     toTitleCase(string) {

@@ -1,9 +1,6 @@
 import React from 'react'
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 
 import WeatherWidget from './WeatherWidget'
 
-render(
-    <WeatherWidget />,
-    window.document.getElementById('weatherRoot')
-)
+render(<WeatherWidget />, window.document.getElementById('weatherRoot'))

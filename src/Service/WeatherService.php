@@ -57,10 +57,10 @@ class WeatherService
             throw new \Exception($response->get_error_message());
         }
 
-        $http_code = \wp_remote_retrieve_response_code($response);
+        $httpCode = \wp_remote_retrieve_response_code($response);
 
-        if ($http_code != 200) {
-            throw new \Exception("{$http_code} response from API");
+        if ($httpCode != 200) {
+            throw new \Exception("{$httpCode} response from API");
         }
 
         $body = \wp_remote_retrieve_body($response);

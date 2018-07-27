@@ -36,7 +36,7 @@ class Weather extends RestBase implements RestRegisterable
      *
      * @return \WP_Rest_Response
      */
-    public function current(\WP_Rest_Request $request)
+    public function current(\WP_Rest_Request $request): \WP_Rest_Response
     {
         try {
             $data = $this->weatherService->getCurrent('phoenix');
